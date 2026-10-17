@@ -4,11 +4,11 @@
 
 独立检查 [news.openx.ccwu.cc](https://news.openx.ccwu.cc/) 的公开接口。检查在 GitHub 标准托管 runner 运行，与新闻服务器分开；使用固定版本 [Upptime](https://upptime.js.org/docs/)，不创建长期访问 Token。
 
-| 接口 | 判定依据 | 状态与历史 |
-|---|---|---|
-| [健康检查](https://news.openx.ccwu.cc/api/health) | HTTP 200、live 模式、status ok | [health.yml](history/health.yml) · [变更记录](https://github.com/bazz1111/news-openx-status/commits/main/history/health.yml) |
-| [新闻列表](https://news.openx.ccwu.cc/api/news?limit=1) | HTTP 200、live 模式、items 数组和 total 标记 | [news.yml](history/news.yml) · [变更记录](https://github.com/bazz1111/news-openx-status/commits/main/history/news.yml) |
-| [新闻统计](https://news.openx.ccwu.cc/api/stats) | HTTP 200、live 模式、hourly 数组和 total 标记 | [stats.yml](history/stats.yml) · [变更记录](https://github.com/bazz1111/news-openx-status/commits/main/history/stats.yml) |
+| 接口                                                    | 判定依据                                      | 状态与历史                                                                                                                   |
+| ------------------------------------------------------- | --------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| [健康检查](https://news.openx.ccwu.cc/api/health)       | HTTP 200、live 模式、status ok                | [health.yml](history/health.yml) · [变更记录](https://github.com/bazz1111/news-openx-status/commits/main/history/health.yml) |
+| [新闻列表](https://news.openx.ccwu.cc/api/news?limit=1) | HTTP 200、live 模式、items 数组和 total 标记  | [news.yml](history/news.yml) · [变更记录](https://github.com/bazz1111/news-openx-status/commits/main/history/news.yml)       |
+| [新闻统计](https://news.openx.ccwu.cc/api/stats)        | HTTP 200、live 模式、hourly 数组和 total 标记 | [stats.yml](history/stats.yml) · [变更记录](https://github.com/bazz1111/news-openx-status/commits/main/history/stats.yml)    |
 
 首次检查完成前不代表监控已生效，请以 [Actions 实际运行](https://github.com/bazz1111/news-openx-status/actions/workflows/uptime.yml) 和 history 文件为准。
 
