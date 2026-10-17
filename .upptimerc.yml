@@ -1,0 +1,51 @@
+# Only public availability metadata belongs in this repository.
+owner: bazz1111
+repo: news-openx-status
+assignees:
+  - bazz1111
+secrets: []
+skipDeleteIssues: true
+delay: 2000
+sites:
+  - name: News API health
+    slug: health
+    url: https://news.openx.ccwu.cc/api/health
+    method: GET
+    expectedStatusCodes: [200]
+    connectTimeout: 5
+    requestTimeout: 10
+    maxRetries: 1
+    maxRedirects: 0
+    maxResponseTime: 5000
+    headers:
+      - 'User-Agent: news-openx-status/1.0 (+https://github.com/bazz1111/news-openx-status)'
+      - 'Accept: application/json'
+    __dangerous__body_down_if_regex_missing: '(?=[\s\S]*"mode"\s*:\s*"live")(?=[\s\S]*"status"\s*:\s*"ok")[\s\S]*\}\s*$'
+  - name: Public news feed
+    slug: news
+    url: https://news.openx.ccwu.cc/api/news?limit=1
+    method: GET
+    expectedStatusCodes: [200]
+    connectTimeout: 5
+    requestTimeout: 10
+    maxRetries: 1
+    maxRedirects: 0
+    maxResponseTime: 5000
+    headers:
+      - 'User-Agent: news-openx-status/1.0 (+https://github.com/bazz1111/news-openx-status)'
+      - 'Accept: application/json'
+    __dangerous__body_down_if_regex_missing: '(?=[\s\S]*"mode"\s*:\s*"live")(?=[\s\S]*"items"\s*:\s*\[)(?=[\s\S]*"total"\s*:\s*\d+)[\s\S]*\}\s*$'
+  - name: Public news statistics
+    slug: stats
+    url: https://news.openx.ccwu.cc/api/stats
+    method: GET
+    expectedStatusCodes: [200]
+    connectTimeout: 5
+    requestTimeout: 10
+    maxRetries: 1
+    maxRedirects: 0
+    maxResponseTime: 5000
+    headers:
+      - 'User-Agent: news-openx-status/1.0 (+https://github.com/bazz1111/news-openx-status)'
+      - 'Accept: application/json'
+    __dangerous__body_down_if_regex_missing: '(?=[\s\S]*"mode"\s*:\s*"live")(?=[\s\S]*"hourly"\s*:\s*\[)(?=[\s\S]*"total"\s*:\s*\d+)[\s\S]*\}\s*$'

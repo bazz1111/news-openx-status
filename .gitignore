@@ -1,0 +1,9 @@
+# No local credentials, downloads, or monitored response bodies.
+.env*
+*.key
+*.pem
+*.age
+*.db
+*.sqlite*
+node_modules/
+.DS_Store
