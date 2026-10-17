@@ -5,6 +5,12 @@ on:
     - cron: '*/5 * * * *'
     - cron: '17 */6 * * *'
   workflow_dispatch:
+    inputs:
+      notification_test:
+        description: 'Send a clearly labelled test Issue (no simulated outage)'
+        type: boolean
+        required: false
+        default: false
   push:
     branches: [main]
     paths:
@@ -38,3 +44,8 @@ jobs:
         env:
           GH_PAT: ${{ github.token }}
           SECRETS_CONTEXT: '{}'
+      - name: Test Issue notifications on request
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.notification_test }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh issue create --repo "$GITHUB_REPOSITORY" --assignee bazz1111 --title '通知演练：GitHub Actions 监控通知（非实际故障）' --body-file .github/notification-test.md
