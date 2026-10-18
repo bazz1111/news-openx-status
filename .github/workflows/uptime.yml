@@ -27,7 +27,9 @@ concurrency:
 jobs:
   monitor:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    # Healthy runs stay short. A new failure waits 120s and probes again, so
+    # the worst case needs more than the previous 5 minute cap.
+    timeout-minutes: 8
     permissions:
       contents: write
       issues: write
@@ -37,7 +39,11 @@ jobs:
         with:
           ref: main
           fetch-depth: 0
+      - name: Confirm a new failure with a second probe
+        id: outage-gate
+        run: node scripts/outage-gate.mjs
       - name: Check public APIs with Upptime
+        if: ${{ steps.outage-gate.outputs.run_upptime != 'false' }}
         uses: upptime/uptime-monitor@a284d6064bcbf89db3f1e2a6c533d0e69111573b # v1.46.0
         with:
           command: ${{ github.event.schedule == '17 */6 * * *' && 'response-time' || 'update' }}

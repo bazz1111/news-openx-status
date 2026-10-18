@@ -12,7 +12,7 @@
 
 首次检查完成前不代表监控已生效，请以 [Actions 实际运行](https://github.com/bazz1111/news-openx-status/actions/workflows/uptime.yml) 和 history 文件为准。
 
-名义检查间隔为五分钟，失败/降级再确认两次；超过五秒视为降级。GitHub 调度可能延迟，因此不能承诺五分钟内告警。每六小时额外保存一次延迟样本，状态变化立即保存；history 的 lastUpdated 是最近保存时间，不是每次检查时间。最新执行以 Actions 为准，可用率与延迟仅代表这些离散外部样本。
+名义检查间隔为五分钟。某次检查若从正常变为失败或降级，同一轮会再等 120 秒复探；复探仍不正常才建故障 Issue。第一次探测已经看到、并且短于 120 秒的发布不会告警。已经记为故障的检查不会为了复探再等 120 秒，恢复后仍马上关闭 Issue。超过五秒视为降级，降级也要连续两次才建 Issue。GitHub 调度可能延迟，因此不能承诺五分钟内告警。每六小时额外保存一次延迟样本，状态变化立即保存；history 的 lastUpdated 是最近保存时间，不是每次检查时间。最新执行以 Actions 为准，可用率与延迟仅代表这些离散外部样本。
 
 故障会建立 [状态 Issue](https://github.com/bazz1111/news-openx-status/issues?q=label%3Astatus)，分配给仓库拥有者；恢复后评论并关闭，保留历史。仓库已按用户选择关注 Issues，实际邮件送达还依赖其 GitHub 通知设置。演练 Issue 会明确标为“测试”，不计作真实故障。没有短信、电话或付费通知。
 
