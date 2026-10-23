@@ -4,20 +4,20 @@
     "url": "https://news.openx.ccwu.cc/api/health",
     "icon": "https://icons.duckduckgo.com/ip3/news.openx.ccwu.cc.ico",
     "slug": "health",
-    "status": "up",
-    "uptime": "96.09%",
-    "uptimeDay": "78.11%",
-    "uptimeWeek": "96.09%",
-    "uptimeMonth": "96.09%",
-    "uptimeYear": "96.09%",
-    "time": 720,
-    "timeDay": 1072,
-    "timeWeek": 720,
-    "timeMonth": 720,
-    "timeYear": 720,
+    "status": "down",
+    "uptime": "96.10%",
+    "uptimeDay": "78.02%",
+    "uptimeWeek": "96.10%",
+    "uptimeMonth": "96.10%",
+    "uptimeYear": "96.10%",
+    "time": 823,
+    "timeDay": 1501,
+    "timeWeek": 823,
+    "timeMonth": 823,
+    "timeYear": 823,
     "dailyMinutesDown": {
       "2026-10-18": 18,
-      "2026-10-23": 315
+      "2026-10-23": 316
     }
   },
   {
@@ -26,19 +26,19 @@
     "icon": "https://icons.duckduckgo.com/ip3/news.openx.ccwu.cc.ico",
     "slug": "news",
     "status": "down",
-    "uptime": "92.09%",
-    "uptimeDay": "55.14%",
-    "uptimeWeek": "92.09%",
-    "uptimeMonth": "92.09%",
-    "uptimeYear": "92.09%",
-    "time": 968,
-    "timeDay": 2037,
-    "timeWeek": 968,
-    "timeMonth": 968,
-    "timeYear": 968,
+    "uptime": "91.57%",
+    "uptimeDay": "51.78%",
+    "uptimeWeek": "91.57%",
+    "uptimeMonth": "91.57%",
+    "uptimeYear": "91.57%",
+    "time": 1076,
+    "timeDay": 2811,
+    "timeWeek": 1076,
+    "timeMonth": 1076,
+    "timeYear": 1076,
     "dailyMinutesDown": {
       "2026-10-18": 27,
-      "2026-10-23": 646
+      "2026-10-23": 694
     }
   },
   {
@@ -47,19 +47,19 @@
     "icon": "https://icons.duckduckgo.com/ip3/news.openx.ccwu.cc.ico",
     "slug": "stats",
     "status": "down",
-    "uptime": "92.22%",
-    "uptimeDay": "55.15%",
-    "uptimeWeek": "92.22%",
-    "uptimeMonth": "92.22%",
-    "uptimeYear": "92.22%",
-    "time": 586,
-    "timeDay": 853,
-    "timeWeek": 586,
-    "timeMonth": 586,
-    "timeYear": 586,
+    "uptime": "91.70%",
+    "uptimeDay": "51.80%",
+    "uptimeWeek": "91.70%",
+    "uptimeMonth": "91.70%",
+    "uptimeYear": "91.70%",
+    "time": 785,
+    "timeDay": 2099,
+    "timeWeek": 785,
+    "timeMonth": 785,
+    "timeYear": 785,
     "dailyMinutesDown": {
       "2026-10-18": 17,
-      "2026-10-23": 646
+      "2026-10-23": 694
     }
   }
 ]
