@@ -4,20 +4,20 @@
     "url": "https://news.openx.ccwu.cc/api/health",
     "icon": "https://icons.duckduckgo.com/ip3/news.openx.ccwu.cc.ico",
     "slug": "health",
-    "status": "up",
-    "uptime": "96.76%",
-    "uptimeDay": "82.80%",
-    "uptimeWeek": "96.76%",
-    "uptimeMonth": "96.76%",
-    "uptimeYear": "96.76%",
-    "time": 713,
-    "timeDay": 1038,
-    "timeWeek": 713,
-    "timeMonth": 713,
-    "timeYear": 713,
+    "status": "down",
+    "uptime": "96.85%",
+    "uptimeDay": "82.76%",
+    "uptimeWeek": "96.85%",
+    "uptimeMonth": "96.85%",
+    "uptimeYear": "96.85%",
+    "time": 693,
+    "timeDay": 1008,
+    "timeWeek": 693,
+    "timeMonth": 693,
+    "timeYear": 693,
     "dailyMinutesDown": {
       "2026-10-18": 18,
-      "2026-10-23": 248
+      "2026-10-23": 249
     }
   },
   {
@@ -26,19 +26,19 @@
     "icon": "https://icons.duckduckgo.com/ip3/news.openx.ccwu.cc.ico",
     "slug": "news",
     "status": "down",
-    "uptime": "95.83%",
-    "uptimeDay": "78.22%",
-    "uptimeWeek": "95.83%",
-    "uptimeMonth": "95.83%",
-    "uptimeYear": "95.83%",
+    "uptime": "92.83%",
+    "uptimeDay": "59.88%",
+    "uptimeWeek": "92.83%",
+    "uptimeMonth": "92.83%",
+    "uptimeYear": "92.83%",
     "time": 968,
-    "timeDay": 1850,
+    "timeDay": 2037,
     "timeWeek": 968,
     "timeMonth": 968,
     "timeYear": 968,
     "dailyMinutesDown": {
       "2026-10-18": 27,
-      "2026-10-23": 314
+      "2026-10-23": 578
     }
   },
   {
@@ -47,19 +47,19 @@
     "icon": "https://icons.duckduckgo.com/ip3/news.openx.ccwu.cc.ico",
     "slug": "stats",
     "status": "down",
-    "uptime": "95.96%",
-    "uptimeDay": "78.24%",
-    "uptimeWeek": "95.96%",
-    "uptimeMonth": "95.96%",
-    "uptimeYear": "95.96%",
+    "uptime": "92.96%",
+    "uptimeDay": "59.89%",
+    "uptimeWeek": "92.96%",
+    "uptimeMonth": "92.96%",
+    "uptimeYear": "92.96%",
     "time": 586,
-    "timeDay": 826,
+    "timeDay": 853,
     "timeWeek": 586,
     "timeMonth": 586,
     "timeYear": 586,
     "dailyMinutesDown": {
       "2026-10-18": 17,
-      "2026-10-23": 313
+      "2026-10-23": 578
     }
   }
 ]
