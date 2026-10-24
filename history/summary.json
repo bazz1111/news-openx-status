@@ -4,21 +4,21 @@
     "url": "https://news.openx.ccwu.cc/api/health",
     "icon": "https://icons.duckduckgo.com/ip3/news.openx.ccwu.cc.ico",
     "slug": "health",
-    "status": "up",
-    "uptime": "95.85%",
-    "uptimeDay": "74.68%",
-    "uptimeWeek": "95.85%",
-    "uptimeMonth": "95.85%",
-    "uptimeYear": "95.85%",
-    "time": 1677,
-    "timeDay": 3199,
-    "timeWeek": 1677,
-    "timeMonth": 1677,
-    "timeYear": 1677,
+    "status": "degraded",
+    "uptime": "95.84%",
+    "uptimeDay": "74.59%",
+    "uptimeWeek": "95.84%",
+    "uptimeMonth": "95.84%",
+    "uptimeYear": "95.84%",
+    "time": 1785,
+    "timeDay": 3371,
+    "timeWeek": 1785,
+    "timeMonth": 1785,
+    "timeYear": 1785,
     "dailyMinutesDown": {
       "2026-10-18": 18,
       "2026-10-23": 359,
-      "2026-10-24": 5
+      "2026-10-24": 6
     }
   },
   {
@@ -27,11 +27,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/news.openx.ccwu.cc.ico",
     "slug": "news",
     "status": "down",
-    "uptime": "89.84%",
-    "uptimeDay": "36.92%",
-    "uptimeWeek": "89.84%",
-    "uptimeMonth": "89.84%",
-    "uptimeYear": "89.84%",
+    "uptime": "89.75%",
+    "uptimeDay": "36.26%",
+    "uptimeWeek": "89.75%",
+    "uptimeMonth": "89.75%",
+    "uptimeYear": "89.75%",
     "time": 1441,
     "timeDay": 2937,
     "timeWeek": 1441,
@@ -40,7 +40,7 @@
     "dailyMinutesDown": {
       "2026-10-18": 27,
       "2026-10-23": 902,
-      "2026-10-24": 6
+      "2026-10-24": 15
     }
   },
   {
@@ -49,11 +49,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/news.openx.ccwu.cc.ico",
     "slug": "stats",
     "status": "down",
-    "uptime": "90.48%",
-    "uptimeDay": "40.25%",
-    "uptimeWeek": "90.48%",
-    "uptimeMonth": "90.48%",
-    "uptimeYear": "90.48%",
+    "uptime": "90.39%",
+    "uptimeDay": "39.59%",
+    "uptimeWeek": "90.39%",
+    "uptimeMonth": "90.39%",
+    "uptimeYear": "90.39%",
     "time": 993,
     "timeDay": 2391,
     "timeWeek": 993,
@@ -62,7 +62,7 @@
     "dailyMinutesDown": {
       "2026-10-18": 17,
       "2026-10-23": 855,
-      "2026-10-24": 5
+      "2026-10-24": 15
     }
   }
 ]
