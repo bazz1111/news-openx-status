@@ -5,11 +5,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/news.openx.ccwu.cc.ico",
     "slug": "health",
     "status": "up",
-    "uptime": "94.82%",
+    "uptime": "94.84%",
     "uptimeDay": "83.70%",
-    "uptimeWeek": "94.82%",
-    "uptimeMonth": "94.82%",
-    "uptimeYear": "94.82%",
+    "uptimeWeek": "94.84%",
+    "uptimeMonth": "94.84%",
+    "uptimeYear": "94.84%",
     "time": 2403,
     "timeDay": 4274,
     "timeWeek": 2403,
@@ -26,21 +26,21 @@
     "url": "https://news.openx.ccwu.cc/api/news?limit=1",
     "icon": "https://icons.duckduckgo.com/ip3/news.openx.ccwu.cc.ico",
     "slug": "news",
-    "status": "down",
-    "uptime": "87.45%",
-    "uptimeDay": "41.35%",
-    "uptimeWeek": "87.45%",
-    "uptimeMonth": "87.45%",
-    "uptimeYear": "87.45%",
-    "time": 1753,
-    "timeDay": 3275,
-    "timeWeek": 1753,
-    "timeMonth": 1753,
-    "timeYear": 1753,
+    "status": "up",
+    "uptime": "87.07%",
+    "uptimeDay": "41.40%",
+    "uptimeWeek": "87.07%",
+    "uptimeMonth": "87.07%",
+    "uptimeYear": "87.07%",
+    "time": 1772,
+    "timeDay": 3239,
+    "timeWeek": 1772,
+    "timeMonth": 1772,
+    "timeYear": 1772,
     "dailyMinutesDown": {
       "2026-10-18": 27,
       "2026-10-23": 902,
-      "2026-10-24": 281
+      "2026-10-24": 322
     }
   },
   {
@@ -49,11 +49,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/news.openx.ccwu.cc.ico",
     "slug": "stats",
     "status": "down",
-    "uptime": "88.17%",
+    "uptime": "87.79%",
     "uptimeDay": "45.44%",
-    "uptimeWeek": "88.17%",
-    "uptimeMonth": "88.17%",
-    "uptimeYear": "88.17%",
+    "uptimeWeek": "87.79%",
+    "uptimeMonth": "87.79%",
+    "uptimeYear": "87.79%",
     "time": 1540,
     "timeDay": 3666,
     "timeWeek": 1540,
@@ -62,7 +62,7 @@
     "dailyMinutesDown": {
       "2026-10-18": 17,
       "2026-10-23": 855,
-      "2026-10-24": 270
+      "2026-10-24": 312
     }
   }
 ]
