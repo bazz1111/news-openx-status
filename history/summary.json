@@ -6,7 +6,7 @@
     "slug": "health",
     "status": "up",
     "uptime": "95.41%",
-    "uptimeDay": "84.26%",
+    "uptimeDay": "84.71%",
     "uptimeWeek": "95.41%",
     "uptimeMonth": "95.41%",
     "uptimeYear": "95.41%",
@@ -27,11 +27,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/news.openx.ccwu.cc.ico",
     "slug": "news",
     "status": "down",
-    "uptime": "88.80%",
+    "uptime": "88.74%",
     "uptimeDay": "41.35%",
-    "uptimeWeek": "88.80%",
-    "uptimeMonth": "88.80%",
-    "uptimeYear": "88.80%",
+    "uptimeWeek": "88.74%",
+    "uptimeMonth": "88.74%",
+    "uptimeYear": "88.74%",
     "time": 1671,
     "timeDay": 3450,
     "timeWeek": 1671,
@@ -40,7 +40,7 @@
     "dailyMinutesDown": {
       "2026-10-18": 27,
       "2026-10-23": 902,
-      "2026-10-24": 134
+      "2026-10-24": 140
     }
   },
   {
@@ -48,21 +48,21 @@
     "url": "https://news.openx.ccwu.cc/api/stats",
     "icon": "https://icons.duckduckgo.com/ip3/news.openx.ccwu.cc.ico",
     "slug": "stats",
-    "status": "down",
-    "uptime": "89.43%",
+    "status": "up",
+    "uptime": "89.37%",
     "uptimeDay": "44.74%",
-    "uptimeWeek": "89.43%",
-    "uptimeMonth": "89.43%",
-    "uptimeYear": "89.43%",
-    "time": 1325,
-    "timeDay": 3466,
-    "timeWeek": 1325,
-    "timeMonth": 1325,
-    "timeYear": 1325,
+    "uptimeWeek": "89.37%",
+    "uptimeMonth": "89.37%",
+    "uptimeYear": "89.37%",
+    "time": 1348,
+    "timeDay": 3365,
+    "timeWeek": 1348,
+    "timeMonth": 1348,
+    "timeYear": 1348,
     "dailyMinutesDown": {
       "2026-10-18": 17,
       "2026-10-23": 855,
-      "2026-10-24": 132
+      "2026-10-24": 139
     }
   }
 ]
