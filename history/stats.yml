@@ -1,7 +1,7 @@
 url: https://news.openx.ccwu.cc/api/stats
-status: up
-code: 200
-responseTime: 549
-lastUpdated: 2026-10-24T00:59:48.166Z
+status: down
+code: 503
+responseTime: 4339
+lastUpdated: 2026-10-24T05:46:49.733Z
 startTime: 2026-10-17T20:17:48.253Z
 generator: Upptime <https://github.com/upptime/upptime>
