@@ -4,21 +4,21 @@
     "url": "https://news.openx.ccwu.cc/api/health",
     "icon": "https://icons.duckduckgo.com/ip3/news.openx.ccwu.cc.ico",
     "slug": "health",
-    "status": "degraded",
-    "uptime": "95.06%",
-    "uptimeDay": "85.43%",
-    "uptimeWeek": "95.06%",
-    "uptimeMonth": "95.06%",
-    "uptimeYear": "95.06%",
-    "time": 2275,
-    "timeDay": 4212,
-    "timeWeek": 2275,
-    "timeMonth": 2275,
-    "timeYear": 2275,
+    "status": "down",
+    "uptime": "94.99%",
+    "uptimeDay": "84.92%",
+    "uptimeWeek": "94.99%",
+    "uptimeMonth": "94.99%",
+    "uptimeYear": "94.99%",
+    "time": 2239,
+    "timeDay": 4058,
+    "timeWeek": 2239,
+    "timeMonth": 2239,
+    "timeYear": 2239,
     "dailyMinutesDown": {
       "2026-10-18": 18,
       "2026-10-23": 359,
-      "2026-10-24": 97
+      "2026-10-24": 104
     }
   },
   {
@@ -27,20 +27,20 @@
     "icon": "https://icons.duckduckgo.com/ip3/news.openx.ccwu.cc.ico",
     "slug": "news",
     "status": "down",
-    "uptime": "87.68%",
+    "uptime": "87.62%",
     "uptimeDay": "41.35%",
-    "uptimeWeek": "87.68%",
-    "uptimeMonth": "87.68%",
-    "uptimeYear": "87.68%",
+    "uptimeWeek": "87.62%",
+    "uptimeMonth": "87.62%",
+    "uptimeYear": "87.62%",
     "time": 1753,
-    "timeDay": 3575,
+    "timeDay": 3275,
     "timeWeek": 1753,
     "timeMonth": 1753,
     "timeYear": 1753,
     "dailyMinutesDown": {
       "2026-10-18": 27,
       "2026-10-23": 902,
-      "2026-10-24": 255
+      "2026-10-24": 262
     }
   },
   {
@@ -49,20 +49,20 @@
     "icon": "https://icons.duckduckgo.com/ip3/news.openx.ccwu.cc.ico",
     "slug": "stats",
     "status": "down",
-    "uptime": "88.41%",
+    "uptime": "88.34%",
     "uptimeDay": "45.44%",
-    "uptimeWeek": "88.41%",
-    "uptimeMonth": "88.41%",
-    "uptimeYear": "88.41%",
+    "uptimeWeek": "88.34%",
+    "uptimeMonth": "88.34%",
+    "uptimeYear": "88.34%",
     "time": 1540,
-    "timeDay": 3651,
+    "timeDay": 3666,
     "timeWeek": 1540,
     "timeMonth": 1540,
     "timeYear": 1540,
     "dailyMinutesDown": {
       "2026-10-18": 17,
       "2026-10-23": 855,
-      "2026-10-24": 244
+      "2026-10-24": 251
     }
   }
 ]
