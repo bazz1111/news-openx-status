@@ -1,7 +1,7 @@
 url: https://news.openx.ccwu.cc/api/health
-status: degraded
+status: up
 code: 200
-responseTime: 5297
-lastUpdated: 2026-10-25T07:49:05.388Z
+responseTime: 369
+lastUpdated: 2026-10-25T07:55:48.106Z
 startTime: 2026-10-17T20:17:40.477Z
 generator: Upptime <https://github.com/upptime/upptime>
