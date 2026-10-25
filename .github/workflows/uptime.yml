@@ -16,6 +16,12 @@ on:
     paths:
       - '.upptimerc.yml'
       - '.github/workflows/uptime.yml'
+      - 'scripts/**'
+  pull_request:
+    paths:
+      - '.upptimerc.yml'
+      - '.github/workflows/uptime.yml'
+      - 'scripts/**'
 
 permissions:
   contents: read
@@ -25,7 +31,16 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  regression:
+    if: ${{ github.event_name == 'pull_request' || github.event_name == 'push' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - name: Local HTTP and incident regressions (no production probes or email)
+        run: node --test scripts/*.test.mjs
   monitor:
+    if: ${{ github.event_name != 'pull_request' }}
     runs-on: ubuntu-latest
     # Healthy runs stay short. A new failure waits 120s and probes again, so
     # the worst case needs more than the previous 5 minute cap.
@@ -39,17 +54,20 @@ jobs:
         with:
           ref: main
           fetch-depth: 0
-      - name: Confirm a new failure with a second probe
-        id: outage-gate
-        run: node scripts/outage-gate.mjs
-      - name: Check public APIs with Upptime
-        if: ${{ steps.outage-gate.outputs.run_upptime != 'false' }}
-        uses: upptime/uptime-monitor@a284d6064bcbf89db3f1e2a6c533d0e69111573b # v1.46.0
-        with:
-          command: ${{ github.event.schedule == '17 */6 * * *' && 'response-time' || 'update' }}
+      - name: Confirm endpoint failures and recovery; update one project incident
+        run: node scripts/project-monitor.mjs
         env:
-          GH_PAT: ${{ github.token }}
-          SECRETS_CONTEXT: '{}'
+          GH_TOKEN: ${{ github.token }}
+          RECORD_SAMPLE: ${{ github.event.schedule == '17 */6 * * *' }}
+      - name: Save confirmed status changes and six-hour samples
+        run: |
+          git add history/project.json
+          if ! git diff --cached --quiet; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'Update confirmed public API status [skip ci]'
+            git push origin HEAD:main
+          fi
       - name: Test Issue notifications on request
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.notification_test }}
         env:
