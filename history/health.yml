@@ -1,7 +1,7 @@
 url: https://news.openx.ccwu.cc/api/health
-status: down
-code: 503
-responseTime: 8967
-lastUpdated: 2026-10-25T12:59:28.525Z
+status: up
+code: 200
+responseTime: 2293
+lastUpdated: 2026-10-25T13:15:55.877Z
 startTime: 2026-10-17T20:17:40.477Z
 generator: Upptime <https://github.com/upptime/upptime>
