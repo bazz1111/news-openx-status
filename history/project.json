@@ -1,20 +1,20 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-26T22:34:54.044Z",
+  "checked_at": "2026-10-26T22:46:57.060Z",
   "incident_open": true,
   "checks": [
     {
       "slug": "health",
-      "status": "down",
-      "httpCode": 0,
-      "responseTimeMs": 10002,
-      "observedStatus": "down"
+      "status": "degraded",
+      "httpCode": 200,
+      "responseTimeMs": 7797,
+      "observedStatus": "degraded"
     },
     {
       "slug": "news",
       "status": "down",
-      "httpCode": 503,
-      "responseTimeMs": 9331,
+      "httpCode": 0,
+      "responseTimeMs": 10003,
       "observedStatus": "down"
     },
     {
