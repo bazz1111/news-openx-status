@@ -1,25 +1,25 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-13T12:27:03.323Z",
+  "checked_at": "2026-11-13T18:22:10.326Z",
   "incident_open": false,
   "checks": [
     {
       "slug": "health",
       "status": "up",
       "httpCode": 200,
-      "responseTimeMs": 658
+      "responseTimeMs": 882
     },
     {
       "slug": "news",
       "status": "up",
       "httpCode": 200,
-      "responseTimeMs": 962
+      "responseTimeMs": 1060
     },
     {
       "slug": "stats",
       "status": "up",
       "httpCode": 200,
-      "responseTimeMs": 646
+      "responseTimeMs": 1068
     }
   ]
 }
