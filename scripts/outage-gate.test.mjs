@@ -47,7 +47,7 @@ describe("config", () => {
 
   test("workflow keeps the schedule and routes all endpoint alerts through the project monitor", () => {
     const workflow = readFileSync(join(root, ".github/workflows/uptime.yml"), "utf8");
-    assert.match(workflow, /cron: '\*\/5 \* \* \* \*'/);
+    assert.match(workflow, /cron: '\*\/15 \* \* \* \*'/);
     assert.match(workflow, /cron: '17 \*\/6 \* \* \*'/);
     assert.match(workflow, /node scripts\/project-monitor\.mjs/);
     assert.doesNotMatch(workflow, /uses: upptime\/uptime-monitor/);
