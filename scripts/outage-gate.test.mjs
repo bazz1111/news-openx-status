@@ -56,6 +56,15 @@ describe("config", () => {
 });
 
 describe("classifyHttpResult", () => {
+  test("distinguishes an explicitly stale public snapshot from a news item mentioning stale", () => {
+    for (const slug of ["news", "stats"]) {
+      const live = JSON.parse(liveBodies[slug]);
+      const check = (body) => classifyHttpResult(bySlug[slug], 200, JSON.stringify(body), 100);
+      assert.equal(check({...live, data_state: "stale"}), "degraded");
+      assert.equal(check({...live, items: [{data_state: "stale"}]}), "up");
+      assert.equal(check({data_state: "stale"}), "down");
+    }
+  });
   test("matches the live-mode body rules", () => {
     for (const slug of ["health", "news", "stats"]) {
       assert.equal(classifyHttpResult(bySlug[slug], 200, liveBodies[slug], 100), "up");

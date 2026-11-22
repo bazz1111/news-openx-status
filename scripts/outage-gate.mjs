@@ -157,6 +157,13 @@ export function classifyHttpResult(site, httpCode, body, responseTimeMs) {
     const pattern = new RegExp(site.__dangerous__body_down_if_regex_missing);
     if (!pattern.test(text)) status = "down";
   }
+  if (status !== "down" && (site.slug === "news" || site.slug === "stats")) {
+    try {
+      if (JSON.parse(text)?.data_state === "stale") return "degraded";
+    } catch {
+      return "down";
+    }
+  }
   return status;
 }
 
